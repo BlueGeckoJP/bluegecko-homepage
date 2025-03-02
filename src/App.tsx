@@ -1,5 +1,7 @@
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { useEffect } from "react";
 import "./App.css";
 import profileImage from "./assets/profile-icon.png";
@@ -126,6 +128,8 @@ function App() {
           </span>
         </div>
       </div>
+      <Analytics />
+      <SpeedInsights />
     </>
   );
 }
