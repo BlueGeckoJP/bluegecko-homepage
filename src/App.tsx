@@ -112,6 +112,18 @@ function App() {
               </a>
             </div>
           </div>
+          <span
+            style={{
+              backgroundColor: "red",
+              padding: "0.5rem",
+              borderRadius: "0.5rem",
+              margin: "0 auto",
+              display: "block",
+              width: "fit-content",
+            }}
+          >
+            This page is work in progress.
+          </span>
         </div>
       </div>
     </>
