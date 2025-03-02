@@ -1,15 +1,10 @@
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { inject } from "@vercel/analytics";
-import { injectSpeedInsights } from "@vercel/speed-insights";
 import { useEffect } from "react";
 import "./App.css";
 import profileImage from "./assets/profile-icon.png";
 
 function App() {
-  inject();
-  injectSpeedInsights();
-
   const blowingMessages = [
     "I can sleep for another 12 hours.",
     "Watching YouTube.",
