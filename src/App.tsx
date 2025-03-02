@@ -2,8 +2,18 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
 import "./App.css";
+import profileImage from "./assets/profile-icon.png";
 
 function App() {
+  const blowingMessages = [
+    "I can sleep for another 12 hours.",
+    "Watching YouTube.",
+    "I'm coding.",
+    "日本からこんにちはー！！！！！",
+    "やっぱり丸亀製麺のうどんが一番",
+    "Playing Visual Studio Code.",
+  ];
+
   useEffect(() => {
     const shapes = document.querySelectorAll(".background-shapes li");
     shapes.forEach((shape) => {
@@ -33,21 +43,39 @@ function App() {
         <li></li>
       </ul>
       <div className="app">
-        <div className="centre-container">
-          <header className="app-header">
-            <span>BlueGecko</span>
-            <div className="nav-bar">
-              <a>Home</a>
-              <a>Works</a>
-              <div className="nav-with-icon">
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  color="#dde6ed"
-                ></FontAwesomeIcon>
-                <a>GitHub</a>
-              </div>
+        <header className="app-header">
+          <span>BlueGecko</span>
+          <div className="nav-bar">
+            <a>Home</a>
+            <a>Works</a>
+            <div className="nav-with-icon">
+              <FontAwesomeIcon
+                icon={faGithub}
+                color="#dde6ed"
+              ></FontAwesomeIcon>
+              <a>GitHub</a>
             </div>
-          </header>
+          </div>
+        </header>
+        <div className="centre-container">
+          <div className="profile">
+            <div className="blowing-message">
+              <span>
+                {
+                  blowingMessages[
+                    Math.floor(Math.random() * blowingMessages.length)
+                  ]
+                }
+              </span>
+            </div>
+            <div className="profile-flex">
+              <div>
+                <p className="profile-msg">Hi I'm BlueGecko!</p>
+                <p>I'm from Japan! I do coding as a hobby!</p>
+              </div>
+              <img src={profileImage}></img>
+            </div>
+          </div>
         </div>
       </div>
     </>
