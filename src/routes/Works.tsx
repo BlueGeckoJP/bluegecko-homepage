@@ -1,3 +1,5 @@
+import "../styles/Works.css";
+
 function Works() {
   return <></>;
 }
