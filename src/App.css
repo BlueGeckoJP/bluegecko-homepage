@@ -5,6 +5,10 @@ html {
   margin: 0;
 }
 
+body {
+  background-color: #27374d;
+}
+
 * {
   box-sizing: border-box;
 
@@ -19,13 +23,13 @@ span {
 }
 
 .app {
-  background-color: #27374d;
   width: 100vw;
   height: 100vh;
 }
 
 .centre-container {
   width: 60%;
+  height: 100%;
   backdrop-filter: blur(0.5rem);
   margin: 0 auto;
 }
@@ -67,4 +71,40 @@ span {
   padding: 0;
   margin: 0;
   margin-left: 0.5rem;
+}
+
+.background-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  margin: 0;
+}
+
+.background-shapes li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: shape-animation 25s linear infinite;
+  bottom: -150px;
+}
+
+@keyframes shape-animation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
 }
