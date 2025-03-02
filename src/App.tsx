@@ -1,4 +1,4 @@
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
 import "./App.css";
@@ -44,7 +44,7 @@ function App() {
       </ul>
       <div className="app">
         <header className="app-header">
-          <span>BlueGecko</span>
+          <span>BlueGecko's HomePage</span>
           <div className="nav-bar">
             <a>Home</a>
             <a>Works</a>
@@ -53,7 +53,7 @@ function App() {
                 icon={faGithub}
                 color="#dde6ed"
               ></FontAwesomeIcon>
-              <a>GitHub</a>
+              <a href="https://github.com/BlueGeckoJP">GitHub</a>
             </div>
           </div>
         </header>
@@ -74,6 +74,42 @@ function App() {
                 <p>I'm from Japan! I do coding as a hobby!</p>
               </div>
               <img src={profileImage}></img>
+            </div>
+          </div>
+          <div className="section">
+            <p className="section-title">Self Introduction</p>
+            <p className="section-body">
+              I am a hobbyist programmer living in Japan. I'm studying English
+              and experimenting with various languages and technologies. My
+              favorite language is Rust (though I haven't used it much lately).
+            </p>
+          </div>
+          <div className="section">
+            <p className="section-title">What I like</p>
+            <p className="section-body">
+              Coding, Rust, VSCode, Linux(Especially Arch Linux), Japan,
+              Australia, Melbourne, Japanese Noodles, and more!
+            </p>
+          </div>
+          <div className="section">
+            <p className="section-title">Links</p>
+            <div className="section-body">
+              <FontAwesomeIcon
+                icon={faGithub}
+                color="#9db2b7"
+              ></FontAwesomeIcon>
+              <a className="link" href="https://github.com/BlueGeckoJP">
+                @BlueGeckoJP
+              </a>
+            </div>
+            <div className="section-body">
+              <FontAwesomeIcon
+                icon={faTwitter}
+                color="#9db2b7"
+              ></FontAwesomeIcon>
+              <a className="link" href="https://twitter.com/BlueGeckoJP">
+                @BlueGeckoJP
+              </a>
             </div>
           </div>
         </div>

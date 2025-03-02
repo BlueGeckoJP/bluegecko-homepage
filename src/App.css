@@ -167,3 +167,27 @@ p {
 .blowing-message span {
   font-size: 1.5rem;
 }
+
+.section {
+  margin-top: 2rem;
+}
+
+.section .section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  border-bottom: 2px solid #9db2bf;
+  margin-bottom: 1rem;
+}
+
+.section .section-body {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.link {
+  color: #9db2bf;
+  text-decoration: none;
+  padding-left: 1rem;
+}
