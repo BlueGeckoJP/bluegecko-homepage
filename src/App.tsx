@@ -1,7 +1,7 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
-import { Outlet } from "react-router";
+import { Link, Outlet } from "react-router";
 import "./styles/App.css";
 
 function App() {
@@ -37,8 +37,8 @@ function App() {
         <header className="app-header">
           <span>BlueGecko's HomePage</span>
           <div className="nav-bar">
-            <a>Home</a>
-            <a>Works</a>
+            <Link to="/">Home</Link>
+            <Link to="/works">Works</Link>
             <div className="nav-with-icon">
               <FontAwesomeIcon
                 icon={faGithub}
