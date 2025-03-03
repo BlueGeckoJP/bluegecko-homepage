@@ -52,7 +52,7 @@ function App() {
             </div>
           </div>
         </header>
-        <span
+        {/*<span
           style={{
             backgroundColor: "red",
             padding: "0.5rem",
@@ -63,7 +63,7 @@ function App() {
           }}
         >
           This page is work in progress.
-        </span>
+        </span>*/}
         <div className="centre-container">
           <Outlet />
         </div>
