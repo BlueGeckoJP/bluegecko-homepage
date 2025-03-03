@@ -3,8 +3,31 @@
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: #1f1f1f;
+  background-image: linear-gradient(
+    90deg,
+    #1f1f1f 0%,
+    #1f1f1f 85%,
+    #a534f6 100%
+  );
+  background-size: 150% 100%;
+  background-position: 50% 0;
   display: block;
+  animation: none;
+  transition: background-position 0.5s ease-out;
+}
+
+.github-repo:hover {
+  animation: slide-background 0.5s ease-out;
+  background-position: 100% 0;
+}
+
+@keyframes slide-background {
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
 
 .github-repo div {
