@@ -1,7 +1,7 @@
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import profileImage from "../assets/profile-icon.png";
 import "../styles/Home.css";
+import profileImage from "/profile-icon.png";
 
 function Home() {
   const blowingMessages = [
