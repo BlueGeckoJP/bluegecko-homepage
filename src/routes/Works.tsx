@@ -83,8 +83,11 @@ function Works() {
         </p>
         <div className="section-body">
           <FontAwesomeIcon icon={faGithub} color="#9db2b7"></FontAwesomeIcon>
-          <a className="link" href="https://github.com/BlueGeckoJP">
-            @BlueGeckoJP
+          <a
+            className="link"
+            href="https://github.com/BlueGeckoJP?tab=repositories"
+          >
+            GitHub Repositories
           </a>
         </div>
       </div>
