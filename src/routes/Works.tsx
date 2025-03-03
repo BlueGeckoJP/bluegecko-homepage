@@ -76,6 +76,18 @@ function Works() {
           </div>
         </a>
       </div>
+      <div className="section">
+        <p className="section-title">And more!</p>
+        <p className="section-body">
+          There are other smaller repositories on GitHub
+        </p>
+        <div className="section-body">
+          <FontAwesomeIcon icon={faGithub} color="#9db2b7"></FontAwesomeIcon>
+          <a className="link" href="https://github.com/BlueGeckoJP">
+            @BlueGeckoJP
+          </a>
+        </div>
+      </div>
     </>
   );
 }
