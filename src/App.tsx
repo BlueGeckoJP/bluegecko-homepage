@@ -37,9 +37,13 @@ function App() {
         <header className="app-header">
           <span>BlueGecko's HomePage</span>
           <div className="nav-bar">
-            <Link to="/">Home</Link>
-            <Link to="/works">Works</Link>
-            <div className="nav-with-icon">
+            <Link to="/" className="nav-link">
+              Home
+            </Link>
+            <Link to="/works" className="nav-link">
+              Works
+            </Link>
+            <div className="nav-with-icon nav-link">
               <FontAwesomeIcon
                 icon={faGithub}
                 color="#dde6ed"

@@ -79,6 +79,15 @@ p {
   margin-left: 0.5rem;
 }
 
+.nav-link {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s linear;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #dde6ed;
+}
+
 .background-shapes {
   position: absolute;
   top: 0;
