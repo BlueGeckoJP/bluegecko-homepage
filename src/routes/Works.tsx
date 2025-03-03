@@ -5,6 +5,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faK } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import GitHubRepo from "../components/GitHubRepo";
 import "../styles/Works.css";
 
 function Works() {
@@ -18,63 +19,27 @@ function Works() {
       </div>
       <div className="section">
         <p className="section-title">Some GitHub Repos</p>
-        <a
-          className="section-body github-repos"
-          href="https://github.com/BlueGeckoJP/FramelessViewer"
-        >
-          <div>
-            <FontAwesomeIcon
-              icon={faGithub}
-              color="#9db2b7"
-              className="repo-icon"
-            ></FontAwesomeIcon>
-            <span className="repo-name">FramelessViewer</span>
-            <FontAwesomeIcon
-              icon={faK}
-              color="#9db2b7"
-              className="repo-icon"
-            ></FontAwesomeIcon>
-            <span>Image viewer with tiling</span>
-          </div>
-        </a>
-        <a
-          className="section-body github-repos"
-          href="https://github.com/BlueGeckoJP/parax2"
-        >
-          <div>
-            <FontAwesomeIcon
-              icon={faGithub}
-              color="#9db2b7"
-              className="repo-icon"
-            ></FontAwesomeIcon>
-            <span className="repo-name">parax2</span>
-            <FontAwesomeIcon
-              icon={faGolang}
-              color="#9db2b7"
-              className="repo-icon"
-            ></FontAwesomeIcon>
-            <span>Application to list images in a folder</span>
-          </div>
-        </a>
-        <a
-          className="section-body github-repos"
-          href="https://github.com/BlueGeckoJP/bluegecko-homepage"
-        >
-          <div>
-            <FontAwesomeIcon
-              icon={faGithub}
-              color="#9db2b7"
-              className="repo-icon"
-            ></FontAwesomeIcon>
-            <span className="repo-name">bluegecko-homepage</span>
-            <FontAwesomeIcon
-              icon={faReact}
-              color="#9db2b7"
-              className="repo-icon"
-            ></FontAwesomeIcon>
-            <span>This HomePage!</span>
-          </div>
-        </a>
+        <GitHubRepo
+          name="FramelessViewer"
+          url="https://github.com/BlueGeckoJP/FramelessViewer"
+          description="Image viewer with tiling"
+          icon={faK}
+          className="section-body"
+        />
+        <GitHubRepo
+          name="parax2"
+          url="https://github.com/BlueGeckoJP/parax2"
+          description="Application to list images in a folder"
+          icon={faGolang}
+          className="section-body"
+        />
+        <GitHubRepo
+          name="bluegecko-homepage"
+          url="https://github.com/BlueGeckoJP/bluegecko-homepage"
+          description="This HomePage!"
+          icon={faReact}
+          className="section-body"
+        />
       </div>
       <div className="section">
         <p className="section-title">And more!</p>
