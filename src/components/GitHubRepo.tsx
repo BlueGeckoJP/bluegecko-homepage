@@ -8,11 +8,18 @@ type Props = {
   description: string;
   icon: IconDefinition;
   className?: string;
+  color: string;
 };
 
 function GitHubRepo(props: Props) {
   return (
-    <a className={`github-repo ${props.className}`} href={props.url}>
+    <a
+      className={`github-repo ${props.className}`}
+      href={props.url}
+      style={{
+        backgroundImage: `linear-gradient(90deg, #1f1f1f 0%, #1f1f1f 85%, ${props.color} 100%)`,
+      }}
+    >
       <div>
         <FontAwesomeIcon
           icon={faGithub}

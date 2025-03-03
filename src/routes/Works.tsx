@@ -25,6 +25,7 @@ function Works() {
           description="Image viewer with tiling"
           icon={faK}
           className="section-body"
+          color="#a534f6"
         />
         <GitHubRepo
           name="parax2"
@@ -32,6 +33,7 @@ function Works() {
           description="Application to list images in a folder"
           icon={faGolang}
           className="section-body"
+          color="#007d9c"
         />
         <GitHubRepo
           name="bluegecko-homepage"
@@ -39,6 +41,7 @@ function Works() {
           description="This HomePage!"
           icon={faReact}
           className="section-body"
+          color="#58c4dc"
         />
       </div>
       <div className="section">
