@@ -1,10 +1,36 @@
-import { StrictMode } from "react";
+import { inject } from "@vercel/analytics";
+import { injectSpeedInsights } from "@vercel/speed-insights";
 import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
-import "./index.css";
+import { BrowserRouter, Route, Routes } from "react-router";
+import AnimatedOutlet from "./AnimatedOutlet";
+import App from "./App";
+import Home from "./routes/Home";
+import Works from "./routes/Works";
+
+inject();
+injectSpeedInsights();
 
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route
+          index
+          element={
+            <AnimatedOutlet>
+              <Home />
+            </AnimatedOutlet>
+          }
+        />
+        <Route
+          path="works"
+          element={
+            <AnimatedOutlet>
+              <Works />
+            </AnimatedOutlet>
+          }
+        />
+      </Route>
+    </Routes>
+  </BrowserRouter>
 );
