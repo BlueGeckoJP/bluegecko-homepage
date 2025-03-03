@@ -1,6 +1,6 @@
 import { faGithub, IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../styles/GitHubRepos.css";
+import "../styles/GitHubRepo.css";
 
 type Props = {
   name: string;
@@ -12,7 +12,7 @@ type Props = {
 
 function GitHubRepo(props: Props) {
   return (
-    <a className={`github-repos ${props.className}`} href={props.url}>
+    <a className={`github-repo ${props.className}`} href={props.url}>
       <div>
         <FontAwesomeIcon
           icon={faGithub}

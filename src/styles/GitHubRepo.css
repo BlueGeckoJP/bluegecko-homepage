@@ -1,4 +1,4 @@
-.github-repos {
+.github-repo {
   text-decoration: none;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -7,22 +7,22 @@
   display: block;
 }
 
-.github-repos div {
+.github-repo div {
   display: grid;
   grid-template-columns: 1rem 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
-.github-repos .repo-icon {
+.github-repo .repo-icon {
   place-self: center;
 }
 
-.github-repos span {
+.github-repo span {
   padding-left: 1rem;
   place-content: center;
 }
 
-.github-repos .repo-name {
+.github-repo .repo-name {
   font-size: 1.25rem;
   font-weight: 700;
 }
