@@ -36,9 +36,14 @@ function Home() {
       <div className="section">
         <p className="section-title">Self Introduction</p>
         <p className="section-body">
-          I am a hobbyist programmer living in Japan. I'm studying English and
-          experimenting with various languages and technologies. My favorite
-          language is Rust (though I haven't used it much lately).
+          I am a hobbyist programmer living in Japan.
+          <br></br>
+          I'm studying English and experimenting with various languages and
+          technologies.
+          <br></br>
+          My favorite language is Rust.
+          <br></br>
+          (最近めっちゃ使ってるけどやっぱRustがさいきょー!)
         </p>
       </div>
       <div className="section">

@@ -2,13 +2,54 @@ import {
   faGithub,
   faGolang,
   faReact,
+  faRust,
+  IconDefinition,
 } from "@fortawesome/free-brands-svg-icons";
 import { faK } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import GitHubRepo from "../components/GitHubRepo";
 import "../styles/Works.css";
 
+interface GithubRepsitory {
+  name: string;
+  url: string;
+  description: string;
+  icon: IconDefinition;
+  color: string;
+}
+
 function Works() {
+  const githubRepos: GithubRepsitory[] = [
+    {
+      name: "FramelessViewer",
+      url: "https://github.com/BlueGeckoJP/FramelessViewer",
+      description: "Image viewer with tiling",
+      icon: faK,
+      color: "#a534f6",
+    },
+    {
+      name: "parax2",
+      url: "https://github.com/BlueGeckoJP/parax2",
+      description: "Application to list images in a folder",
+      icon: faGolang,
+      color: "#007d9c",
+    },
+    {
+      name: "bluegecko-homepage",
+      url: "https://github.com/BlueGeckoJP/bluegecko-homepage",
+      description: "This HomePage!",
+      icon: faReact,
+      color: "#58c4dc",
+    },
+    {
+      name: "gridx2",
+      url: "https://github.com/BlueGeckoJP/gridx2",
+      description: "The successor project of parax2. faster and simpler",
+      icon: faRust,
+      color: "#dea584",
+    },
+  ];
+
   return (
     <>
       <div className="section">
@@ -19,30 +60,17 @@ function Works() {
       </div>
       <div className="section">
         <p className="section-title">Some GitHub Repos</p>
-        <GitHubRepo
-          name="FramelessViewer"
-          url="https://github.com/BlueGeckoJP/FramelessViewer"
-          description="Image viewer with tiling"
-          icon={faK}
-          className="section-body"
-          color="#a534f6"
-        />
-        <GitHubRepo
-          name="parax2"
-          url="https://github.com/BlueGeckoJP/parax2"
-          description="Application to list images in a folder"
-          icon={faGolang}
-          className="section-body"
-          color="#007d9c"
-        />
-        <GitHubRepo
-          name="bluegecko-homepage"
-          url="https://github.com/BlueGeckoJP/bluegecko-homepage"
-          description="This HomePage!"
-          icon={faReact}
-          className="section-body"
-          color="#58c4dc"
-        />
+        {githubRepos.map((repo) => (
+          <GitHubRepo
+            key={repo.name}
+            name={repo.name}
+            url={repo.url}
+            description={repo.description}
+            icon={repo.icon}
+            className="section-body"
+            color={repo.color}
+          />
+        ))}
       </div>
       <div className="section">
         <p className="section-title">And more!</p>
