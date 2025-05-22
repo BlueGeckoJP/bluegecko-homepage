@@ -2,6 +2,7 @@ import {
   faGithub,
   faGolang,
   faReact,
+  faRust,
   IconDefinition,
 } from "@fortawesome/free-brands-svg-icons";
 import { faK } from "@fortawesome/free-solid-svg-icons";
@@ -40,6 +41,13 @@ function Works() {
       icon: faReact,
       color: "#58c4dc",
     },
+    {
+      name: "gridx2",
+      url: "https://github.com/BlueGeckoJP/gridx2",
+      description: "The successor project of parax2. faster and simpler",
+      icon: faRust,
+      color: "#dea584",
+    },
   ];
 
   return (
@@ -52,19 +60,17 @@ function Works() {
       </div>
       <div className="section">
         <p className="section-title">Some GitHub Repos</p>
-        {
-          githubRepos.map((repo) => (
-            <GitHubRepo
-              key={repo.name}
-              name={repo.name}
-              url={repo.url}
-              description={repo.description}
-              icon={repo.icon}
-              className="section-body"
-              color={repo.color}
-            />
-          ))
-        }
+        {githubRepos.map((repo) => (
+          <GitHubRepo
+            key={repo.name}
+            name={repo.name}
+            url={repo.url}
+            description={repo.description}
+            icon={repo.icon}
+            className="section-body"
+            color={repo.color}
+          />
+        ))}
       </div>
       <div className="section">
         <p className="section-title">And more!</p>
