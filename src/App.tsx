@@ -12,11 +12,12 @@ function App() {
     const delay = Math.random() * 2;
     const size = Math.random() * 5 + 1;
 
+    shape.style.width = `${size}rem`;
+    shape.style.height = `${size}rem`;
+    shape.style.left = `${randomLeft}vw`;
+
     gsap.set(shape, {
-      left: `${randomLeft}vw`,
-      width: `${size}rem`,
-      height: `${size}rem`,
-      y: "150px",
+      y: "0",
       rotation: 0,
       opacity: 0.2,
       borderRadius: 0,
@@ -43,11 +44,11 @@ function App() {
 
   return (
     <>
-      <ul className="background-shapes">
+      <ul className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden m-0">
         {Array.from({ length: 10 }).map((_, index) => (
           <li
             key={index}
-            className="background-shape bg-white absolute block list-none"
+            className="background-shape bg-white absolute block list-none -bottom-32"
           ></li>
         ))}
       </ul>
