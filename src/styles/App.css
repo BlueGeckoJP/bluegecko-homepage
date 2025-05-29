@@ -32,7 +32,7 @@ p {
 }
 
 .centre-container {
-  width: 30%;
+  width: 32rem;
   flex-grow: 1;
   backdrop-filter: blur(0.5rem);
   margin: 0 auto;
