@@ -8,7 +8,6 @@ import {
 import { faK } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import GitHubRepo from "../components/GitHubRepo";
-import "../styles/Works.css";
 
 interface GithubRepsitory {
   name: string;
@@ -52,14 +51,18 @@ function Works() {
 
   return (
     <>
-      <div className="section">
-        <p className="section-title">Works</p>
-        <p className="section-body">
+      <div className="mt-8">
+        <p className="text-2xl font-bold w-full border-b-2 border-[#9db2bf] mb-4 text-[#dde6ed]">
+          Works
+        </p>
+        <p className="mx-2 mb-2 text-[#dde6ed]">
           I'll make something amazing in the future :D
         </p>
       </div>
-      <div className="section">
-        <p className="section-title">Some GitHub Repos</p>
+      <div className="mt-8">
+        <p className="text-2xl font-bold w-full border-b-2 border-[#9db2bf] mb-4 text-[#dde6ed]">
+          Some GitHub Repos
+        </p>
         {githubRepos.map((repo) => (
           <GitHubRepo
             key={repo.name}
@@ -67,20 +70,22 @@ function Works() {
             url={repo.url}
             description={repo.description}
             icon={repo.icon}
-            className="section-body"
+            className="mx-2 mb-2"
             color={repo.color}
           />
         ))}
       </div>
-      <div className="section">
-        <p className="section-title">And more!</p>
-        <p className="section-body">
+      <div className="mt-8">
+        <p className="text-2xl font-bold w-full border-b-2 border-[#9db2bf] mb-4 text-[#dde6ed]">
+          And more!
+        </p>
+        <p className="mx-2 mb-2 text-[#dde6ed]">
           There are other smaller repositories on GitHub
         </p>
-        <div className="section-body">
+        <div className="mx-2 mb-2 flex items-center">
           <FontAwesomeIcon icon={faGithub} color="#9db2b7"></FontAwesomeIcon>
           <a
-            className="link"
+            className="text-[#9db2bf] no-underline pl-4"
             href="https://github.com/BlueGeckoJP?tab=repositories"
           >
             GitHub Repositories
