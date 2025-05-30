@@ -1,6 +1,5 @@
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../styles/Home.css";
 import profileImage from "/profile-icon.png";
 
 function Home() {
@@ -15,9 +14,9 @@ function Home() {
 
   return (
     <>
-      <div className="profile">
-        <div className="blowing-message">
-          <span>
+      <div className="mx-auto pt-12">
+        <div className="relative p-8 w-full h-12 bg-[#526d82] rounded-[10px] mb-8 flex justify-center items-center before:content-[''] before:absolute before:right-[25px] before:-bottom-[15px] before:block before:w-0 before:h-0 before:border-r-[15px] before:border-r-transparent before:border-l-[15px] before:border-l-transparent before:border-t-[15px] before:border-t-[#526d82]">
+          <span className="text-2xl text-[#dde6ed]">
             {
               blowingMessages[
                 Math.floor(Math.random() * blowingMessages.length)
@@ -25,45 +24,65 @@ function Home() {
             }
           </span>
         </div>
-        <div className="profile-flex">
+        <div className="flex justify-between items-center">
           <div>
-            <p className="profile-msg">Hi I'm BlueGecko!</p>
-            <p>I'm from Japan! I do coding as a hobby!</p>
+            <p className="text-3xl font-bold text-[#dde6ed]">
+              Hi I'm BlueGecko!
+            </p>
+            <p className="text-[#dde6ed]">
+              I'm from Japan! I do coding as a hobby!
+            </p>
           </div>
-          <img src={profileImage}></img>
+          <img
+            src={profileImage}
+            className="w-20 h-20 rounded-full ml-4"
+            alt="Profile Icon"
+          ></img>
         </div>
       </div>
-      <div className="section">
-        <p className="section-title">Self Introduction</p>
-        <p className="section-body">
+      <div className="mt-8">
+        <p className="text-2xl font-bold w-full border-b-2 border-[#9db2bf] mb-4 text-[#dde6ed]">
+          Self Introduction
+        </p>
+        <p className="mx-2 mb-2 text-[#dde6ed]">
           I am a hobbyist programmer living in Japan.
-          <br></br>
+          <br />
           I'm studying English and experimenting with various languages and
           technologies.
-          <br></br>
+          <br />
           My favorite language is Rust.
-          <br></br>
+          <br />
           (最近めっちゃ使ってるけどやっぱRustがさいきょー!)
         </p>
       </div>
-      <div className="section">
-        <p className="section-title">What I like</p>
-        <p className="section-body">
+      <div className="mt-8">
+        <p className="text-2xl font-bold w-full border-b-2 border-[#9db2bf] mb-4 text-[#dde6ed]">
+          What I like
+        </p>
+        <p className="mx-2 mb-2 text-[#dde6ed]">
           Coding, Rust, VSCode, Linux(Especially Arch Linux), Japan, Australia,
           Melbourne, Japanese Noodles, and more!
         </p>
       </div>
-      <div className="section">
-        <p className="section-title">Links</p>
-        <div className="section-body">
+      <div className="mt-8">
+        <p className="text-2xl font-bold w-full border-b-2 border-[#9db2bf] mb-4 text-[#dde6ed]">
+          Links
+        </p>
+        <div className="mx-2 mb-2 flex items-center">
           <FontAwesomeIcon icon={faGithub} color="#9db2b7"></FontAwesomeIcon>
-          <a className="link" href="https://github.com/BlueGeckoJP">
+          <a
+            className="text-[#9db2bf] no-underline pl-4"
+            href="https://github.com/BlueGeckoJP"
+          >
             @BlueGeckoJP
           </a>
         </div>
-        <div className="section-body">
+        <div className="mx-2 mb-2 flex items-center">
           <FontAwesomeIcon icon={faTwitter} color="#9db2b7"></FontAwesomeIcon>
-          <a className="link" href="https://twitter.com/BlueGeckoJP">
+          <a
+            className="text-[#9db2bf] no-underline pl-4"
+            href="https://twitter.com/BlueGeckoJP"
+          >
             @BlueGeckoJP
           </a>
         </div>
