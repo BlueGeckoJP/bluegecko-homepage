@@ -15,7 +15,7 @@ function Home() {
   return (
     <>
       <div className="mx-auto pt-12">
-        <div className="relative p-8 w-full h-12 bg-[#526d82] rounded-[10px] mb-8 flex justify-center items-center before:content-[''] before:absolute before:right-[25px] before:-bottom-[15px] before:block before:w-0 before:h-0 before:border-r-[15px] before:border-r-transparent before:border-l-[15px] before:border-l-transparent before:border-t-[15px] before:border-t-[#526d82]">
+        <div className="relative p-8 w-full h-12 bg-[#526d82] rounded-[10px] mb-8 flex justify-center items-center before:content-[''] before:absolute before:right-[25px] before:-bottom-[15px] before:block before:w-0 before:h-0 before:border-r-15 before:border-r-transparent before:border-l-15 before:border-l-transparent before:border-t-15 before:border-t-[#526d82]">
           <span className="text-2xl text-[#dde6ed]">
             {
               blowingMessages[

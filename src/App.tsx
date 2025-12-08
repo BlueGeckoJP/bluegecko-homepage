@@ -83,7 +83,7 @@ function App() {
             </div>
           </div>
         </header>
-        <div className="w-[32rem] flex-grow backdrop-blur-md mx-auto">
+        <div className="w-lg grow backdrop-blur-md mx-auto">
           <Outlet />
         </div>
       </div>
