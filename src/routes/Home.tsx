@@ -10,6 +10,9 @@ function Home() {
     "日本からこんにちはー！！！！！",
     "やっぱり丸亀製麺のうどんが一番",
     "Playing Visual Studio Code.",
+    "Rust is the best programming language!",
+    "btw, I use Arch Linux.",
+    "yay -S bluegecko-homepage",
   ];
 
   return (
