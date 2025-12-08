@@ -20,6 +20,20 @@ interface GithubRepository {
 function Works() {
   const githubRepos: GithubRepository[] = [
     {
+      name: "rustic-viewer",
+      url: "https://github.com/BlueGeckoJP/rustic-viewer",
+      description: "An experimental image viewer using web tech stacks",
+      icon: faReact,
+      color: "#58c4dc",
+    },
+    {
+      name: "explotty",
+      url: "https://github.com/BlueGeckoJP/explotty",
+      description: "Combined terminal and file explorer application",
+      icon: faRust,
+      color: "#dea584",
+    },
+    {
       name: "FramelessViewer",
       url: "https://github.com/BlueGeckoJP/FramelessViewer",
       description: "Image viewer with tiling",
