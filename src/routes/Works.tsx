@@ -9,7 +9,7 @@ import { faK } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import GitHubRepo from "../components/GitHubRepo";
 
-interface GithubRepsitory {
+interface GithubRepository {
   name: string;
   url: string;
   description: string;
@@ -18,7 +18,7 @@ interface GithubRepsitory {
 }
 
 function Works() {
-  const githubRepos: GithubRepsitory[] = [
+  const githubRepos: GithubRepository[] = [
     {
       name: "FramelessViewer",
       url: "https://github.com/BlueGeckoJP/FramelessViewer",
