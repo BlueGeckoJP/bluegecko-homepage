@@ -1,5 +1,8 @@
 <script lang="ts">
-	import avatar from '$lib/assets/avatar.png';
+	import avatarFront from '$lib/assets/avatar.png';
+	import avatarBack from '$lib/assets/vrc_avatar.webp';
+
+	let flipped = false;
 </script>
 
 <nav class="fixed top-1/2 left-16 flex -translate-y-1/2 flex-col gap-4 text-xl text-text-main">
@@ -15,11 +18,26 @@
 	<div class="mx-auto h-fit w-1/2 py-24">
 		<section id="about">
 			<div class="flex items-center">
-				<img
-					src={avatar}
-					alt="Avatar"
-					class="border-text h-24 w-24 rounded-full border border-white object-cover p-0.5"
-				/>
+				<div class="h-24 w-24 perspective-midrange">
+					<button
+						type="button"
+						aria-label="Flip avatar"
+						on:click={() => (flipped = !flipped)}
+						class="relative h-full w-full transition-transform duration-700 ease-in-out transform-3d"
+						class:rotate-y-180={flipped}
+					>
+						<img
+							src={avatarFront}
+							alt="Avatar front"
+							class="absolute inset-0 h-full w-full rounded-full border border-white object-cover p-0.5 backface-hidden"
+						/>
+						<img
+							src={avatarBack}
+							alt="Avatar back"
+							class="absolute inset-0 h-full w-full rotate-y-180 rounded-full border border-white object-cover p-0.5 backface-hidden"
+						/>
+					</button>
+				</div>
 				<div class="ml-6">
 					<h1 class="text-4xl font-bold">BlueGecko</h1>
 					<span>A hobby programmer, A rustacean</span>
