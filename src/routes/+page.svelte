@@ -33,9 +33,7 @@
 				I am studying English to study abroad, and I am also studying French a little as a hobby.<br
 				/>
 			</span>
-			<span class="mt-8 mb-2 block border-b border-text-sub pb-1 text-xl font-bold"
-				>What I Like</span
-			>
+			<span class="mt-8 mb-2 block pb-1 text-xl font-bold">What I Like</span>
 			<ul>
 				<li>- Coding: ~ LIFE ~</li>
 				<li>- Rust: I think it's the best programming language. I really love it.</li>
@@ -46,6 +44,19 @@
 			</ul>
 		</section>
 		<section id="projects"></section>
-		<section id="contact"></section>
+		<section id="contact">
+			<span class="mt-8 mb-2 block border-b border-text-sub pb-1 text-xl font-bold">Contact</span>
+			My GitHub:
+			<a class="border-accent text-accent hover:border-b" href="https://github.com/BlueGeckoJP"
+				>BlueGeckoJP</a
+			>
+			<br />
+			My Discord: bluegeckojp
+			<br />
+			My Twitter (X):
+			<a class="border-accent text-accent hover:border-b" href="https://x.com/BlueGeckoJP"
+				>@BlueGeckoJP</a
+			>
+		</section>
 	</div>
 </main>
