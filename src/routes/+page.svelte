@@ -2,7 +2,7 @@
 	import avatar from '$lib/assets/avatar.png';
 </script>
 
-<nav class="fixed top-1/2 left-16 flex -translate-y-1/2 flex-col gap-4 text-text-main">
+<nav class="fixed top-1/2 left-16 flex -translate-y-1/2 flex-col gap-4 text-xl text-text-main">
 	<a href="#about">About</a>
 	<a href="#projects">Projects</a>
 	<a href="#contact">Contact</a>
