@@ -1,9 +1,9 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
+	import avatar from '$lib/assets/avatar.png';
 	import './layout.css';
 
 	let { children } = $props();
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head><link rel="icon" href={avatar} /><title>BlueGecko Homepage</title></svelte:head>
 {@render children()}
