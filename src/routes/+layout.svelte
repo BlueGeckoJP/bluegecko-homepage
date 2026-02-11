@@ -1,5 +1,5 @@
 <script lang="ts">
-	import avatar from '$lib/assets/avatar.png';
+	import avatar from '$lib/assets/avatar.webp';
 	import './layout.css';
 
 	let { children } = $props();
