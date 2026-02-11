@@ -1,6 +1,6 @@
 <script lang="ts">
-	import avatar from '$lib/assets/avatar.webp';
-	import './layout.css';
+	import avatar from "$lib/assets/avatar.webp";
+	import "./layout.css";
 
 	let { children } = $props();
 </script>

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import avatarFront from '$lib/assets/avatar.webp';
-	import avatarBack from '$lib/assets/vrc_avatar.webp';
+	import avatarFront from "$lib/assets/avatar.webp";
+	import avatarBack from "$lib/assets/vrc_avatar.webp";
 
 	let flipped = false;
 </script>

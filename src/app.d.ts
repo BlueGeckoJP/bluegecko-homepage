@@ -10,7 +10,7 @@ declare global {
 	}
 }
 
-declare module '*.svg' {
+declare module "*.svg" {
 	const src: string;
 	export default src;
 }
